@@ -17,6 +17,11 @@ This application allows users to upload their resume and paste a job description
 3. Claude returns a rewritten resume in Markdown format.
 4. The app displays the result and provides download options in Markdown or PDF.
 
+## Requirements
+
+- requirements.txt
+- An Claude API KEY 
+
 ## Installation
 
 1. Clone the repository:
