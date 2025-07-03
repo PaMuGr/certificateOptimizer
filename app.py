@@ -139,7 +139,7 @@ def generate_pdf(markdown_text: str) -> bytes:
         if os.path.exists(tmp_path):
             os.remove(tmp_path)
 
-# Streamlit UI
+#Streamlit UI
 st.set_page_config(page_title="Optimizador de Currículum 🇪🇸", layout="centered")
 st.title("📄 Optimizador de CV con IA para el mercado laboral español")
 st.markdown("Sube tu currículum y pega la descripción del trabajo para obtener una versión personalizada y optimizada para ATS.")

@@ -64,12 +64,11 @@ class ResumeOptimizer(Agent):
             return optimized_resume
 
     def _generate_pdf(self, markdown_text: str) -> str:
+        #Generates a directory to put resumes
         """Convert markdown resume to PDF and return file path."""
-        # Create output directory if it doesn't exist
         output_dir = "generated_resumes"
         os.makedirs(output_dir, exist_ok=True)
         
-        # Generate filename with timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"optimized_resume_{timestamp}.pdf"
         filepath = os.path.join(output_dir, filename)
